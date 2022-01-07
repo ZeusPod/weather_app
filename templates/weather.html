@@ -1,0 +1,11 @@
+ {% block content %}   
+    <h1>
+        <p>The clima for {{ forecast[0]}} in {{ forecast[1]}}</p>
+    </h1>
+    <a href="{{forecast[4]}}"></a>
+    <ul>
+        <li>Temp : {{forecast[2]}}</li>
+        <li>Weather : {{forecast[3]}}</li>
+        
+    </ul>
+{% endblock %}
