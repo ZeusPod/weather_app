@@ -31,13 +31,19 @@ class Weather():
             temp = data['current']['temp_c']
             weather = data['current']['condition']['text']
             icon = data['current']['condition']['icon']
+            localtime = data['location']['localtime']
             forecast.append(city)
             forecast.append(country)
             forecast.append(temp)
             forecast.append(weather)
             forecast.append(icon)
+            forecast.append(localtime)
             
         return forecast
 
+load_dotenv()
 
+apiKey = os.getenv("API_KEY")
+myweather = Weather(apiKey, 'Caracas')
+print(myweather.get_weather())
 

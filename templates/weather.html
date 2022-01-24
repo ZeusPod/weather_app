@@ -1,11 +1,37 @@
- {% block content %}   
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/static/css/main.css">
+     <title>weather</title>
+ </head>
+ <body>
+    {% block content %}   
     <h1>
-        <p>The clima for {{ forecast[0]}} in {{ forecast[1]}}</p>
+        <p>The clima for {{ data[0] }} in {{ data[1] }}</p>
     </h1>
-    <a href="{{forecast[4]}}"></a>
+    <a href="{{ data[4] }}"></a>
     <ul>
-        <li>Temp : {{forecast[2]}}</li>
-        <li>Weather : {{forecast[3]}}</li>
+        <h2>
+            <li>Temp : {{ data[2] }}</li>
+            
+        </h2>
+        <h2>
+
+            <li>Weather : {{ data[3] }} <img src="{{ data[4] }}" alt=""></li>
+        </h2>
+        <h2>
+            <li>
+               date & hour : {{ data[5] }}
+            </li>
+        </h2>
         
     </ul>
 {% endblock %}
+     
+ </body>
+ </html>
+ 
+ 

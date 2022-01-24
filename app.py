@@ -1,5 +1,4 @@
 from flask import Flask,render_template, request
-import requests
 from weather import Weather
 from dotenv import load_dotenv
 import os
@@ -19,6 +18,6 @@ def index():
 def weather():
         city = request.form.get('city')
         weather = Weather(api_key, city)
-        forecast = weather.get_weather()
-        return render_template('index.html',forecast=forecast)
+        data = weather.get_weather()
+        return render_template('weather.html', data=data)
     
