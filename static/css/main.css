@@ -17,6 +17,8 @@ body {
   backdrop-filter: blur(1.9px);
   -webkit-backdrop-filter: blur(1.9px);
   border: 1px solid rgba(186, 170, 189, 0.05);
+  -webkit-box-shadow: 12px 11px 17px 4px rgba(0,0,0,0.77); 
+  box-shadow: 12px 11px 17px 4px rgba(44, 43, 43, 0.77);
 }
 
 .info-container {
@@ -31,6 +33,8 @@ body {
   backdrop-filter: blur(1.9px);
   -webkit-backdrop-filter: blur(1.9px);
   border: 1px solid rgba(186, 170, 189, 0.05);
+  -webkit-box-shadow: 12px 11px 17px 4px rgba(0,0,0,0.77); 
+  box-shadow: 12px 11px 17px 4px rgba(44, 43, 43, 0.77);
 }
 
 .text-area {
@@ -44,4 +48,14 @@ body {
   background: #ce4bca;
   outline: none;
   height: 25px;
+}
+
+.dev{
+  font-family: "Merriweather", serif;
+  font-size: 1em;
+  color: #070607;
+  display: inline-block;
+  margin-left: 80%;
+  margin-top: 2%;
+
 }
