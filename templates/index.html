@@ -5,13 +5,18 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/css/main.css">
         <title>Wheather app</title>
     </head>
     <body>
-        <h1>Minimal weather app</h1>
-        <form action="{{url_for('weather')}}" method="POST">
-            <input type="text" name="city" placeholder="City">
-            <input type="submit" value="Get weather">
+        <div class="card-container">
+            
+            <h1>Minimal weather app</h1>
+            <form action="{{url_for('weather')}}" method="POST">
+                <input type="text" name="city" placeholder="City">
+                <input type="submit" value="Get weather">
+            
+        </div>
             
    
 
