@@ -32,12 +32,14 @@ class Weather():
             weather = data['current']['condition']['text']
             icon = data['current']['condition']['icon']
             localtime = data['location']['localtime']
+            humidity = data['current']['humidity']
             forecast.append(city)
             forecast.append(country)
             forecast.append(temp)
             forecast.append(weather)
             forecast.append(icon)
             forecast.append(localtime)
+            forecast.append(humidity)
             
         return forecast
 

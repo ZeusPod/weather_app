@@ -1,47 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
 
 body {
-  background: #83a4d4; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #b6fbff,
-    #83a4d4
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #b6fbff,
-    #83a4d4
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url(/static/css/img/undraw_weather_app_re_kcb1.svg);
+  background-repeat: no-repeat;
 }
 
-
-.card-container{
-
-display: inline-block;
-margin-left: 30%;
-margin-top: 10%;
-padding: 10%;
-border-radius: 5px;
-font-family: 'Merriweather', serif;
-background: rgba(255, 255, 255, 0.64);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.5);
-
+.card-container {
+  display: inline-block;
+  margin-left: 30%;
+  margin-top: 10%;
+  padding: 10%;
+  border-radius: 5px;
+  font-family: "Merriweather", serif;
+  background: rgba(186, 170, 189, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.9px);
+  -webkit-backdrop-filter: blur(1.9px);
+  border: 1px solid rgba(186, 170, 189, 0.05);
 }
 
-.info-container{
+.info-container {
   display: inline-block;
   margin-left: 30%;
   margin-top: 10%;
   padding: 5%;
   border-radius: 5px;
-  font-family: 'Merriweather', serif;
-  background: rgba(255, 255, 255, 0.64);
+  font-family: "Merriweather", serif;
+  background: rgba(186, 170, 189, 0.5);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(1.9px);
+  -webkit-backdrop-filter: blur(1.9px);
+  border: 1px solid rgba(186, 170, 189, 0.05);
+}
 
+.text-area {
+  border-radius: 5px;
+  outline: none;
+  height: 20px;
+}
+
+.btn {
+  border-radius: 5px;
+  background: #ce4bca;
+  outline: none;
+  height: 25px;
 }
